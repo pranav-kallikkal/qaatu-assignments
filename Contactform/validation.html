@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            * {box-sizing: border-box;}
+
+            .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            }
+            input[type=text],textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+  
+            }
+            input[type=button] {
+            background-color: #2c08be;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            
+            }
+
+            input[type=button]:hover {
+            background-color: #4568a0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+    <form style="text-align: center;">
+        <label id="msgName">Name</label>   
+        <input type="text" id="txt1" placeholder="Name">
+        <label id="msgEmail">Email</label>   
+        <input type="text" id="txt2" placeholder="Email">
+        <label id="msgMessage">Message</label>   
+        
+        <textarea id="txt3" name="message" placeholder="Message" style="height:200px"></textarea>
+        <input type="button"  id="btn1" value="Send Message">
+    </form>
+</div>
+        <script type="text/javascript">
+           var txtobj1=document.getElementById('txt1');
+           var txtobj2=document.getElementById('txt2');
+           var txtobj3=document.getElementById('txt3');
+           var btnobj=document.getElementById('btn1');
+           var lblMsg1=document.getElementById('msgName');
+           var lblMsg2=document.getElementById('msgEmail');
+           var lblMsg3=document.getElementById('msgMessage');
+           btnobj.onclick=function(){
+            var t1=txtobj1.value;
+            var t2=txtobj2.value;
+            var t3=txtobj3.value;
+            if(t1==""){
+                lblMsg1.innerHTML="Please enter  Name";
+                lblMsg1.style.color="#f00";
+            }else if(t2=="" )
+            {
+                lblMsg2.innerHTML="Please enter  Email";
+                lblMsg2.style.color="#f00";
+
+                
+            }else(t3=="") 
+            {
+                lblMsg3.innerHTML="Please enter  Message";
+                lblMsg3.style.color="#f00";
+            }
+           } 
+           
+           
+           
+           txtobj1.onclick=function()
+           {
+            lblMsg1.innerHTML="";
+           } 
+           
+           txtobj2.onclick=function()
+           {
+            lblMsg2.innerHTML="";
+           }
+
+           txtobj3.onclick=function()
+           {
+            lblMsg3.innerHTML="";
+           }
+        </script>
+    </body>
+</html>

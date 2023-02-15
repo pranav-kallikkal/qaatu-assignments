@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  
+}
+
+input[type=submit] {
+  background-color: #2c08be;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #4568a0;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 430px; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="row">
+  <div class="column" style="background-color:#4081b6;">
+    <h2>QUESTIONS? <br> COMMENTS? <br> WE'D LOVE TO HEAR FROM YOU.</h2>
+    <h2></h2>
+    <h2></h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+<p>Cecilia Chapman <br>
+    711-2880 Nulla St. <br>
+    Mankato Mississippi 96522 <br>
+    (257) 563-7401.</p>
+  </div>
+
+
+  <div class="column" style="background-color:#605e5e;">
+    <form>
+        <input type="text" id="fname" name="firstname" placeholder="Enter your Name" required>
+    
+        <input type="text" id="email" name="email" placeholder="Enter a valid email address" required>
+    
+        <textarea id="message" name="message" placeholder="Enter your message" style="height:200px" required></textarea>
+    
+        <input type="submit" value="Submit" >
+      </form>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  
+}
+
+input[type=submit] {
+  background-color: #2c08be;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #4568a0;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Contact Us</h2>
+
+<div class="container">
+  <form>
+    <label for="fname">FULL NAME</label>
+    <input type="text" id="fname" name="firstname" placeholder="Name" required>
+
+    <label for="fname">EMAIL ADDRESS</label>
+    <input type="text" id="email" name="email" placeholder="Email" required>
+
+    <label for="fname">SUBJECT</label>
+    <input type="text" id="subject" name="email" placeholder="Subject" required>
+
+    <label for="fname">MESSAGE</label>
+    <textarea id="message" name="message" placeholder="Message" style="height:200px" required></textarea>
+
+    <input type="submit" value="Send Message" >
+  </form>
+</div>
+
+</body>
+</html>
